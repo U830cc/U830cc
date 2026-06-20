@@ -62,7 +62,7 @@ motto:       Amateur webmaster who loves the open web
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=U830cc&show_icons=true&theme=github_dark&hide_border=true&cache_seconds=1800" alt="U830cc's GitHub Stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=U830cc&show_icons=true&theme=github_dark&hide_border=true&count_private=true&cache_seconds=1800" alt="U830cc's GitHub Stats" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=U830cc&layout=compact&theme=github_dark&hide_border=true&langs_count=8&cache_seconds=1800" alt="Top Languages" />
 
 <br/>
