@@ -1,9 +1,11 @@
 name: Generate Snake Animation
 
 on:
-  # Run automatically every 12 hours so the snake stays fresh
+  # Run automatically every 12 hours so the snake stays fresh.
+  # Minute 17 avoids the top-of-the-hour rush, when GitHub's
+  # shared runners are busiest and scheduled jobs get delayed or dropped.
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "17 */12 * * *"
   # Allow manual runs from the Actions tab
   workflow_dispatch:
   # Regenerate on every push to the default branch
@@ -13,6 +15,11 @@ on:
 
 permissions:
   contents: write
+
+# Only one snake build at a time; a newer run replaces a queued/running one
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:
